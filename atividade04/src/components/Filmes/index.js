@@ -8,7 +8,6 @@ const Filmes = () => {
     const buscar = async titulo => {
         titulo = titulo.length == 0 ? 'A' : titulo;
         const data = await buscarFilme(titulo);
-        console.log(data);
         setFilme(data);
     }
 
